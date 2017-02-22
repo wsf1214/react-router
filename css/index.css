@@ -1,0 +1,267 @@
+@charset "UTF-8";
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑"; }
+
+img {
+  width: 100%;
+  display: block;
+  border: 0; }
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex; }
+  #app #warp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+    #app #warp #headerContent {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      #app #warp #headerContent #homeHeader, #app #warp #headerContent #goodHeader, #app #warp #headerContent #findHeader, #app #warp #headerContent #cartHeader, #app #warp #headerContent #userHeader, #app #warp #headerContent #detailHeader {
+        width: 100%;
+        height: 0.88rem;
+        background: deepskyblue;
+        text-align: center;
+        line-height: 0.88rem;
+        color: #fff;
+        font-size: 0.4rem;
+        position: relative; }
+        #app #warp #headerContent #homeHeader #back, #app #warp #headerContent #goodHeader #back, #app #warp #headerContent #findHeader #back, #app #warp #headerContent #cartHeader #back, #app #warp #headerContent #userHeader #back, #app #warp #headerContent #detailHeader #back {
+          display: block;
+          color: #fff;
+          position: absolute;
+          z-index: 99;
+          width: 1rem;
+          height: 100%;
+          font-weight: 900;
+          font-size: 0.7rem; }
+      #app #warp #headerContent #homeContent, #app #warp #headerContent #goodContent, #app #warp #headerContent #findContent, #app #warp #headerContent #cartContent, #app #warp #headerContent #userContent, #app #warp #headerContent #detailContent {
+        width: 100%;
+        height: 100%;
+        overflow: scroll; }
+      #app #warp #headerContent #homeContent #homeSwiper {
+        width: 100%; }
+        #app #warp #headerContent #homeContent #homeSwiper .swiper-wrapper {
+          width: 100%; }
+          #app #warp #headerContent #homeContent #homeSwiper .swiper-wrapper .swiper-slide {
+            width: 100%; }
+      #app #warp #headerContent #homeContent .homeLinks {
+        width: 100%;
+        height: 1.6rem;
+        display: flex;
+        background: #fff;
+        border-bottom: 0.15rem solid #ccc; }
+        #app #warp #headerContent #homeContent .homeLinks li {
+          font-size: 0.24rem;
+          width: 25%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          #app #warp #headerContent #homeContent .homeLinks li img {
+            width: 50%;
+            margin-bottom: 0.1rem; }
+      #app #warp #headerContent #homeContent .linksBottom {
+        width: 90%;
+        height: 1.5rem;
+        background: #fff;
+        margin: 5%;
+        overflow: hidden; }
+      #app #warp #headerContent #homeContent .gos {
+        width: 95%;
+        display: flex;
+        padding: 0 2.5%; }
+        #app #warp #headerContent #homeContent .gos li {
+          width: 49%; }
+          #app #warp #headerContent #homeContent .gos li:nth-child(1) {
+            margin-right: 2.5%; }
+      #app #warp #headerContent #homeContent #homeSwiper2 {
+        height: 1.2rem;
+        margin: 0.1rem; }
+        #app #warp #headerContent #homeContent #homeSwiper2 .swiper-wrapper {
+          width: 100%;
+          height: 100%; }
+          #app #warp #headerContent #homeContent #homeSwiper2 .swiper-wrapper .swiper-slide {
+            width: 100%;
+            height: 100%;
+            display: flex; }
+            #app #warp #headerContent #homeContent #homeSwiper2 .swiper-wrapper .swiper-slide .img {
+              width: 1.2rem;
+              height: 1.2rem;
+              background: deepskyblue;
+              margin-right: 0.1rem; }
+            #app #warp #headerContent #homeContent #homeSwiper2 .swiper-wrapper .swiper-slide .text {
+              flex: 1;
+              height: 1.2rem; }
+              #app #warp #headerContent #homeContent #homeSwiper2 .swiper-wrapper .swiper-slide .text p, #app #warp #headerContent #homeContent #homeSwiper2 .swiper-wrapper .swiper-slide .text span {
+                width: 100%;
+                display: -webkit-box;
+                overflow: hidden;
+                white-space: normal !important;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                height: 50%;
+                line-height: 0.6rem; }
+              #app #warp #headerContent #homeContent #homeSwiper2 .swiper-wrapper .swiper-slide .text p {
+                font-size: 0.3rem; }
+              #app #warp #headerContent #homeContent #homeSwiper2 .swiper-wrapper .swiper-slide .text span {
+                font-size: 0.27rem;
+                color: dimgrey; }
+      #app #warp #headerContent #homeContent .proTops {
+        width: 100%;
+        height: 0.7rem;
+        display: flex;
+        border-bottom: 0.08rem solid #ccc;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 0.15rem solid #ccc; }
+        #app #warp #headerContent #homeContent .proTops li {
+          box-sizing: border-box;
+          height: 0.7rem;
+          line-height: 0.7rem;
+          font-size: 0.4rem;
+          border-bottom: 0.03rem solid transparent; }
+      #app #warp #headerContent #homeContent .homePros {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; }
+        #app #warp #headerContent #homeContent .homePros li {
+          width: 3.175rem;
+          height: 3.975rem;
+          border-bottom: 0.05rem solid #ccc; }
+          #app #warp #headerContent #homeContent .homePros li:nth-child(odd) {
+            border-right: 0.05rem solid #ccc; }
+          #app #warp #headerContent #homeContent .homePros li img {
+            width: 3.175rem;
+            height: 3.175rem; }
+          #app #warp #headerContent #homeContent .homePros li .goods {
+            width: 3.075rem;
+            height: 0.7rem;
+            padding: 0.05rem;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.24rem; }
+            #app #warp #headerContent #homeContent .homePros li .goods .name {
+              display: -webkit-box;
+              overflow: hidden;
+              white-space: normal !important;
+              text-overflow: ellipsis;
+              word-wrap: break-word;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              height: 50%;
+              line-height: 0.35rem; }
+            #app #warp #headerContent #homeContent .homePros li .goods .info {
+              width: 100%;
+              display: flex;
+              justify-content: space-between; }
+              #app #warp #headerContent #homeContent .homePros li .goods .info .price {
+                font-size: 0.26rem;
+                color: #f66; }
+                #app #warp #headerContent #homeContent .homePros li .goods .info .price del {
+                  color: dimgrey;
+                  font-weight: 100;
+                  font-size: 0.2rem;
+                  margin-left: 0.05rem; }
+              #app #warp #headerContent #homeContent .homePros li .goods .info .style {
+                font-size: 0.18rem;
+                color: #ccc;
+                line-height: 0.4rem; }
+      #app #warp #headerContent #goodContent .proTops {
+        width: 100%;
+        height: 0.7rem;
+        display: flex;
+        border-bottom: 0.08rem solid #ccc;
+        justify-content: space-around;
+        align-items: center; }
+        #app #warp #headerContent #goodContent .proTops li {
+          box-sizing: border-box;
+          height: 0.7rem;
+          line-height: 0.7rem;
+          font-size: 0.3rem;
+          border-bottom: 0.03rem solid transparent; }
+          #app #warp #headerContent #goodContent .proTops li.active {
+            color: red;
+            border-color: red; }
+      #app #warp #headerContent #goodContent .homePros {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; }
+        #app #warp #headerContent #goodContent .homePros li {
+          width: 3.175rem;
+          height: 3.975rem;
+          border-bottom: 0.05rem solid #ccc; }
+          #app #warp #headerContent #goodContent .homePros li:nth-child(odd) {
+            border-right: 0.05rem solid #ccc; }
+          #app #warp #headerContent #goodContent .homePros li img {
+            width: 3.175rem;
+            height: 3.175rem; }
+          #app #warp #headerContent #goodContent .homePros li .goods {
+            width: 3.075rem;
+            height: 0.7rem;
+            padding: 0.05rem;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.24rem; }
+            #app #warp #headerContent #goodContent .homePros li .goods .name {
+              display: -webkit-box;
+              overflow: hidden;
+              white-space: normal !important;
+              text-overflow: ellipsis;
+              word-wrap: break-word;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              height: 50%;
+              line-height: 0.35rem; }
+            #app #warp #headerContent #goodContent .homePros li .goods .info {
+              width: 100%;
+              display: flex;
+              justify-content: space-between; }
+              #app #warp #headerContent #goodContent .homePros li .goods .info .price {
+                font-size: 0.26rem;
+                color: #f66; }
+                #app #warp #headerContent #goodContent .homePros li .goods .info .price del {
+                  color: dimgrey;
+                  font-weight: 100;
+                  font-size: 0.2rem;
+                  margin-left: 0.05rem; }
+              #app #warp #headerContent #goodContent .homePros li .goods .info .style {
+                font-size: 0.18rem;
+                color: #ccc;
+                line-height: 0.4rem; }
+    #app #warp #footer {
+      width: 100%;
+      height: 0.88rem;
+      background: #000;
+      color: #fff;
+      display: flex; }
+      #app #warp #footer li {
+        width: 25%;
+        height: 100%; }
+        #app #warp #footer li a {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          font-size: 0.3rem;
+          justify-content: center;
+          align-items: center; }
+          #app #warp #footer li a.active {
+            color: red; }
+
+/*# sourceMappingURL=index.css.map */
